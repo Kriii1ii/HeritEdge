@@ -82,38 +82,38 @@ const Home: React.FC = () => {
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-            {/* Feature 1 */}
-            <motion.div
-              whileHover={{ scale: 1.05 }}
-              whileTap={{ scale: 0.95 }}
-              className="text-center p-6 bg-gradient-to-br from-[#606C38] to-[#283618] rounded-2xl text-white shadow-lg"
-            >
-              <div className="text-4xl mb-4">🎨</div>
-              <h3 className="text-2xl font-semibold mb-2">Showcase Your Art</h3>
-              <p>Digitally display your creativity to a wider audience who values your cultural roots.</p>
-            </motion.div>
+             {/* Feature 1 */}
+              <motion.div
+                whileHover={{ scale: 1.05 }}
+                whileTap={{ scale: 0.95 }}
+                className="text-center p-6 bg-gradient-to-br from-[#606C38] to-[#283618] rounded-2xl text-white shadow-lg"
+              >
+                <div className="text-4xl mb-4">🎨</div>
+                <h3 className="text-2xl font-semibold mb-2">Showcase Your Art</h3>
+                <p>Digitally display your creativity to a wider audience who values your cultural roots.</p>
+              </motion.div>
 
-            {/* Feature 2 */}
-            <motion.div
-              whileHover={{ scale: 1.05 }}
-              whileTap={{ scale: 0.95 }}
-              className="text-center p-6 bg-gradient-to-br from-[#DDA15E] to-[#C06414] rounded-2xl text-white shadow-lg"
-            >
-              <div className="text-4xl mb-4">🤝</div>
-              <h3 className="text-2xl font-semibold mb-2">Build Connections</h3>
-              <p>Connect with fellow artists, historians, and cultural enthusiasts across the globe.</p>
-            </motion.div>
+              {/* Feature 2 */}
+              <motion.div
+                whileHover={{ scale: 1.05 }}
+                whileTap={{ scale: 0.95 }}
+                className="text-center p-6 bg-gradient-to-br from-[#DDA15E] to-[#C06414] rounded-2xl text-white shadow-lg"
+              >
+                <div className="text-4xl mb-4">🤝</div>
+                <h3 className="text-2xl font-semibold mb-2">Build Connections</h3>
+                <p>Connect with fellow artists, historians, and cultural enthusiasts across the globe.</p>
+              </motion.div>
 
-            {/* Feature 3 */}
-            <motion.div
-              whileHover={{ scale: 1.05 }}
-              whileTap={{ scale: 0.95 }}
-              className="text-center p-6 bg-gradient-to-br from-[#7B1010] to-[#4E2C0E] rounded-2xl text-white shadow-lg"
-            >
-              <div className="text-4xl mb-4">💰</div>
-              <h3 className="text-2xl font-semibold mb-2">Earn Income</h3>
-              <p>Monetize your skills through digital products, workshops, and exclusive commissions.</p>
-            </motion.div>
+              {/* Feature 3 */}
+              <motion.div
+                whileHover={{ scale: 1.05 }}
+                whileTap={{ scale: 0.95 }}
+                className="text-center p-6 bg-gradient-to-br from-[#7B1010] to-[#4E2C0E] rounded-2xl text-white shadow-lg"
+              >
+                <div className="text-4xl mb-4">💰</div>
+                <h3 className="text-2xl font-semibold mb-2">Earn Income</h3>
+                <p>Monetize your skills through digital products, workshops, and exclusive commissions.</p>
+              </motion.div>
           </div>
         </div>
       </section>
