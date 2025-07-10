@@ -42,10 +42,10 @@ const Navbar: React.FC = () => {
           </Link>
 
           {/* Main Navigation */}
-          <div className="hidden md:flex items-center space-x-8">
+          <div className="hidden md:flex items-center space-x-8 text-lg">
             <Link 
               to="/" 
-              className={`text-gray-700 hover:text-[#00A5E3] px-3 py-2 text-sm font-medium transition-colors ${
+              className={`text-gray-700 hover:text-[#00A5E3] px-3 py-2 font-medium transition-colors ${
                 isActive('/') ? 'text-[#00A5E3] border-b-2 border-[#00A5E3]' : ''
               }`}
               style={{ fontFamily: 'Open Sauce' }}
@@ -56,7 +56,7 @@ const Navbar: React.FC = () => {
             <div className="relative">
               <button
                 onClick={() => setShowCategoriesDropdown(!showCategoriesDropdown)}
-                className={`text-gray-700 hover:text-[#00A5E3] px-3 py-2 text-sm font-medium flex items-center space-x-1 transition-colors ${
+                className={`text-gray-700 hover:text-[#00A5E3] px-3 py-2 font-medium flex items-center space-x-1 transition-colors ${
                   isActive('/categories') ? 'text-[#00A5E3] border-b-2 border-[#00A5E3]' : ''
                 }`}
                 style={{ fontFamily: 'Open Sauce' }}
@@ -89,7 +89,7 @@ const Navbar: React.FC = () => {
 
             <Link 
               to="/heritage-fair" 
-              className={`text-gray-700 hover:text-[#00A5E3] px-3 py-2 text-sm font-medium transition-colors ${
+              className={`text-gray-700 hover:text-[#00A5E3] px-3 py-2 font-medium transition-colors ${
                 isActive('/heritage-fair') ? 'text-[#00A5E3] border-b-2 border-[#00A5E3]' : ''
               }`}
               style={{ fontFamily: 'Open Sauce' }}
@@ -99,7 +99,7 @@ const Navbar: React.FC = () => {
 
             <Link 
               to="/kudos" 
-              className={`text-gray-700 hover:text-[#00A5E3] px-3 py-2 text-sm font-medium transition-colors ${
+              className={`text-gray-700 hover:text-[#00A5E3] px-3 py-2 font-medium transition-colors ${
                 isActive('/kudos') ? 'text-[#00A5E3] border-b-2 border-[#00A5E3]' : ''
               }`}
               style={{ fontFamily: 'Open Sauce' }}
@@ -109,7 +109,7 @@ const Navbar: React.FC = () => {
 
             <Link 
               to="/training" 
-              className={`text-gray-700 hover:text-[#00A5E3] px-3 py-2 text-sm font-medium transition-colors ${
+              className={`text-gray-700 hover:text-[#00A5E3] px-3 py-2 font-medium transition-colors ${
                 isActive('/training') ? 'text-[#00A5E3] border-b-2 border-[#00A5E3]' : ''
               }`}
               style={{ fontFamily: 'Open Sauce' }}
