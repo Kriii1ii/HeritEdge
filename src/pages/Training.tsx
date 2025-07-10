@@ -17,7 +17,7 @@ const Training: React.FC = () => {
       price: 199,
       rating: 4.8,
       students: 234,
-      image: 'https://images.pexels.com/photos/1194420/pexels-photo-1194420.jpeg?auto=compress&cs=tinysrgb&w=400',
+      image: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTnVPp5uBVqCaKZitBdTA_w074EaJ0r1Bzbzg&s',
       description: 'Learn the basics of digital art creation using industry-standard tools and techniques.',
       features: ['Live sessions', 'Recorded lessons', 'Personal feedback', 'Certificate']
     },
@@ -30,7 +30,7 @@ const Training: React.FC = () => {
       price: 249,
       rating: 4.9,
       students: 186,
-      image: 'https://images.pexels.com/photos/1194420/pexels-photo-1194420.jpeg?auto=compress&cs=tinysrgb&w=400',
+      image: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSAauYqFiWYOiHXo4pnLvckAKXNqZGj286sNg&s',
       description: 'Master traditional painting techniques from watercolor to oil painting.',
       features: ['Materials included', 'Studio access', 'Group critiques', 'Exhibition opportunity']
     },
@@ -43,7 +43,7 @@ const Training: React.FC = () => {
       price: 149,
       rating: 4.7,
       students: 312,
-      image: 'https://images.pexels.com/photos/1194420/pexels-photo-1194420.jpeg?auto=compress&cs=tinysrgb&w=400',
+      image: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT2z5QN9f-daQ3bSS9b9lSY-w5PBYUqXQwqAA&s',
       description: 'Learn how to market your art and build a sustainable creative business.',
       features: ['Business templates', 'Marketing strategies', 'Portfolio review', 'Networking opportunities']
     }
@@ -58,7 +58,7 @@ const Training: React.FC = () => {
       sessions: 45,
       rating: 4.9,
       price: 75,
-      image: 'https://images.pexels.com/photos/1194420/pexels-photo-1194420.jpeg?auto=compress&cs=tinysrgb&w=400',
+      image: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQG1rihY0ilqAmqhw-znus_yhmxTfaH3xXqyA&s',
       description: 'Renowned contemporary artist with exhibitions in major galleries worldwide.',
       availability: 'Mon, Wed, Fri'
     },
@@ -70,7 +70,7 @@ const Training: React.FC = () => {
       sessions: 62,
       rating: 4.8,
       price: 65,
-      image: 'https://images.pexels.com/photos/1194420/pexels-photo-1194420.jpeg?auto=compress&cs=tinysrgb&w=400',
+      image: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSxdGnJ5azVIY9HnU1Q6STDfuJ09Sy-RiV9Aw&s',
       description: 'Master craftsperson specializing in traditional textile and pottery techniques.',
       availability: 'Tue, Thu, Sat'
     },
@@ -82,7 +82,7 @@ const Training: React.FC = () => {
       sessions: 38,
       rating: 4.9,
       price: 80,
-      image: 'https://images.pexels.com/photos/1194420/pexels-photo-1194420.jpeg?auto=compress&cs=tinysrgb&w=400',
+      image: 'https://vida.id/hubfs/Contoh%20media%20digital_.jpg',
       description: 'Leading digital artist and creative director with major brand collaborations.',
       availability: 'Mon, Tue, Thu'
     }
@@ -98,7 +98,7 @@ const Training: React.FC = () => {
       price: 85,
       spots: 12,
       spotsLeft: 4,
-      image: 'https://images.pexels.com/photos/1194420/pexels-photo-1194420.jpeg?auto=compress&cs=tinysrgb&w=400',
+      image: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT_E7jZuh30f0Sa5o_HcyGNEBotNQuejbpbuQ&s',
       description: 'Learn watercolor techniques while painting beautiful landscapes.',
       materials: 'All materials provided'
     },
@@ -111,7 +111,7 @@ const Training: React.FC = () => {
       price: 95,
       spots: 8,
       spotsLeft: 2,
-      image: 'https://images.pexels.com/photos/1194420/pexels-photo-1194420.jpeg?auto=compress&cs=tinysrgb&w=400',
+      image: 'https://ceramike.com/wp-content/uploads/2022/08/Learning-Pottery-The-Basics.jpg',
       description: 'Hands-on pottery making workshop for beginners.',
       materials: 'Clay and tools included'
     },
@@ -124,7 +124,7 @@ const Training: React.FC = () => {
       price: 120,
       spots: 15,
       spotsLeft: 7,
-      image: 'https://images.pexels.com/photos/1194420/pexels-photo-1194420.jpeg?auto=compress&cs=tinysrgb&w=400',
+      image: 'https://www.unirufa.it/wp-content/uploads/2025/02/Masterclass-Bibiana-Petrera.jpg',
       description: 'Advanced digital art techniques and professional workflows.',
       materials: 'Software access provided'
     }

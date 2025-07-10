@@ -9,27 +9,27 @@ const Kudos: React.FC = () => {
   const featuredArtists = [
     {
       id: '1',
-      name: 'Frida Kahlo',
-      period: '1907-1954',
-      achievement: 'Revolutionary Mexican artist who explored identity, postcolonialism, gender, class, and race',
-      image: 'https://images.pexels.com/photos/1194420/pexels-photo-1194420.jpeg?auto=compress&cs=tinysrgb&w=400',
-      impact: 'Her self-portraits and works inspired by Mexican culture made her an icon of feminism and Mexican pride'
+      name: 'Judith Leyster Paintings',
+      period: '1893s',
+      achievement: 'Once thought to be by Frans Hals, Leyster’s signature (a star) was later rediscovered, correcting the misattribution, Dealers even painted over her signature to attribute the painting to Hals, capitalizing on his market fame.',
+      image: 'https://cdn.sanity.io/images/cxgd3urn/production/5afd44f7564d711b7cd973fa68d53263d023fd9a-788x900.jpg?w=1200&h=1371&q=85&fit=crop&auto=format',
+      impact: 'Judith Leyster challenged gender norms in art history, becoming one of the few recognized female painters of the Dutch Golden Age and paving the way for later recognition of women artists.'
     },
     {
       id: '2',
-      name: 'Georgia O\'Keeffe',
-      period: '1887-1986',
-      achievement: 'American modernist artist known for her paintings of enlarged flowers and New Mexico landscapes',
-      image: 'https://images.pexels.com/photos/1194420/pexels-photo-1194420.jpeg?auto=compress&cs=tinysrgb&w=400',
-      impact: 'Often called the "Mother of American modernism," she paved the way for women in the art world'
+      name: 'Bihugeet',
+      period: 'Ancient agrarian practices',
+      achievement: 'Originated and sustained a rich oral tradition, later adapted into popular culture, while maintaining its roots in female-led community expression.',
+      image: 'https://historified.in/wp-content/uploads/2025/01/baa27b4278bf56a6bcff67674d51a00b.jpg',
+      impact: 'Preserved agrarian traditions and womens voices through communal song, shaping Assamese cultural identity.'
     },
     {
       id: '3',
-      name: 'Yayoi Kusama',
-      period: '1929-Present',
-      achievement: 'Japanese contemporary artist known for her polka dot infinity rooms and pumpkin sculptures',
-      image: 'https://images.pexels.com/photos/1194420/pexels-photo-1194420.jpeg?auto=compress&cs=tinysrgb&w=400',
-      impact: 'Her work has influenced contemporary art globally and brought awareness to mental health through art'
+      name: 'Persian Carpet weavers',
+      period: '16th–18th centuries',
+      achievement: 'Sustained generational knowledge transfer, contributed to global recognition of Persian carpets, and empowered cultural identity through artistic expression.',
+      image: 'https://iranparadise.com/wp-content/uploads/2024/07/Persian-Carpet.jpg',
+      impact: 'Preserved and innovated an intricate cultural art form while navigating systemic gender and labor inequalities.'
     }
   ];
 
@@ -64,19 +64,19 @@ const Kudos: React.FC = () => {
     {
       title: 'Breaking Barriers',
       description: 'Supporting women artists who have overcome significant challenges to showcase their talent',
-      image: 'https://images.pexels.com/photos/1194420/pexels-photo-1194420.jpeg?auto=compress&cs=tinysrgb&w=400',
+      image: 'https://media.istockphoto.com/id/1279969804/vector/businesswoman-breaking-wall-strong-woman-jamps-through-barrier-free-people-action-and.jpg?s=612x612&w=0&k=20&c=GMNtG4IsyOTGH-VilwLe5sxyi2LUN0LjRO50jPjrlKI=',
       impact: '300+ artists supported'
     },
     {
       title: 'Cultural Preservation',
       description: 'Preserving traditional art forms and techniques passed down through generations of women',
-      image: 'https://images.pexels.com/photos/1194420/pexels-photo-1194420.jpeg?auto=compress&cs=tinysrgb&w=400',
+      image: 'https://miro.medium.com/v2/resize:fit:1400/1*e4-HIh6j-s_8anUp_Sa5Yw.jpeg',
       impact: '50+ traditions documented'
     },
     {
       title: 'Mentorship Program',
       description: 'Connecting established artists with emerging talent for guidance and support',
-      image: 'https://images.pexels.com/photos/1194420/pexels-photo-1194420.jpeg?auto=compress&cs=tinysrgb&w=400',
+      image: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRXNS52aPtH4IlBquGNQm5fLYRK-kFh-YunNA&s',
       impact: '1,000+ mentorship hours'
     }
   ];
