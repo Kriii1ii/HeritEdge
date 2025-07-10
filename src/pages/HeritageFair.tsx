@@ -18,7 +18,7 @@ const HeritageFair: React.FC = () => {
       originalPrice: 420,
       rating: 4.9,
       reviews: 28,
-      image: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT4tK9g3fN9-qQ1SzkrCohIgWRITuS4yGa4EA&s',
+      image: 'https://d11qgm9a5k858y.cloudfront.net/8d06ewqh9pmyba0q79992y97nqm9',
       description: 'Unleash your taste buds with our Aap Titaura—a bold fusion of juicy mango, fiery spices, and a zesty Nepali kick.',
       isFeatured: true,
       isOnSale: true
@@ -71,7 +71,7 @@ const HeritageFair: React.FC = () => {
       price: 450,
       rating: 4.8,
       reviews: 18,
-      image: 'https://images.pexels.com/photos/1194420/pexels-photo-1194420.jpeg?auto=compress&cs=tinysrgb&w=400',
+      image: 'https://i.etsystatic.com/12661449/r/il/2e911f/4084016444/il_fullxfull.4084016444_ltks.jpg',
       description: 'Handwoven textile art with cultural significance'
     }
   ];
