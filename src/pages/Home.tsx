@@ -8,16 +8,19 @@ const Home: React.FC = () => {
   const { translations } = useLanguage();
 
   return (
-    <div className="min-h-screen">
-      {/* Hero Section with Background Image */}
+    <div className="min-h-screen w-full overflow-x-hidden">
+      {/* Hero Section with Full-Width Background Image */}
       <section
-        className="w-full relative h-screen flex items-center justify-center bg-cover bg-center bg-no-repeat overflow-hidden"
+        className="relative w-full h-screen flex items-center justify-center bg-cover bg-center bg-no-repeat"
         style={{
-          backgroundImage: "url('/astha.jpg')", 
+          backgroundImage: "url('/astha.jpg')",
+          backgroundSize: 'cover',
+          backgroundPosition: 'center',
+          backgroundRepeat: 'no-repeat',
         }}
       >
         {/* Optional Dark Overlay */}
-        <div className="absolute inset-0 bg-black opacity-40 z-0"></div>
+        <div className="absolute inset-0 bg-black opacity-40 z-0" />
 
         {/* Content */}
         <div className="relative z-10 text-center px-4 sm:px-6 lg:px-8">
@@ -83,38 +86,37 @@ const Home: React.FC = () => {
 
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
             {/* Feature 1 */}
-            {/* Feature 1 */}
-              <motion.div
-                whileHover={{ scale: 1.05 }}
-                whileTap={{ scale: 0.95 }}
-                className="text-center p-6 bg-gradient-to-br from-[#606C38] to-[#283618] rounded-2xl text-white shadow-lg"
-              >
-                <div className="text-4xl mb-4">🎨</div>
-                <h3 className="text-2xl font-semibold mb-2">Showcase Your Art</h3>
-                <p>Digitally display your creativity to a wider audience who values your cultural roots.</p>
-              </motion.div>
+            <motion.div
+              whileHover={{ scale: 1.05 }}
+              whileTap={{ scale: 0.95 }}
+              className="text-center p-6 bg-gradient-to-br from-[#606C38] to-[#283618] rounded-2xl text-white shadow-lg"
+            >
+              <div className="text-4xl mb-4">🎨</div>
+              <h3 className="text-2xl font-semibold mb-2">Showcase Your Art</h3>
+              <p>Digitally display your creativity to a wider audience who values your cultural roots.</p>
+            </motion.div>
 
-              {/* Feature 2 */}
-              <motion.div
-                whileHover={{ scale: 1.05 }}
-                whileTap={{ scale: 0.95 }}
-                className="text-center p-6 bg-gradient-to-br from-[#DDA15E] to-[#C06414] rounded-2xl text-white shadow-lg"
-              >
-                <div className="text-4xl mb-4">🤝</div>
-                <h3 className="text-2xl font-semibold mb-2">Build Connections</h3>
-                <p>Connect with fellow artists, historians, and cultural enthusiasts across the globe.</p>
-              </motion.div>
+            {/* Feature 2 */}
+            <motion.div
+              whileHover={{ scale: 1.05 }}
+              whileTap={{ scale: 0.95 }}
+              className="text-center p-6 bg-gradient-to-br from-[#DDA15E] to-[#C06414] rounded-2xl text-white shadow-lg"
+            >
+              <div className="text-4xl mb-4">🤝</div>
+              <h3 className="text-2xl font-semibold mb-2">Build Connections</h3>
+              <p>Connect with fellow artists, historians, and cultural enthusiasts across the globe.</p>
+            </motion.div>
 
-              {/* Feature 3 */}
-              <motion.div
-                whileHover={{ scale: 1.05 }}
-                whileTap={{ scale: 0.95 }}
-                className="text-center p-6 bg-gradient-to-br from-[#7B1010] to-[#4E2C0E] rounded-2xl text-white shadow-lg"
-              >
-                <div className="text-4xl mb-4">💰</div>
-                <h3 className="text-2xl font-semibold mb-2">Earn Income</h3>
-                <p>Monetize your skills through digital products, workshops, and exclusive commissions.</p>
-              </motion.div>
+            {/* Feature 3 */}
+            <motion.div
+              whileHover={{ scale: 1.05 }}
+              whileTap={{ scale: 0.95 }}
+              className="text-center p-6 bg-gradient-to-br from-[#7B1010] to-[#4E2C0E] rounded-2xl text-white shadow-lg"
+            >
+              <div className="text-4xl mb-4">💰</div>
+              <h3 className="text-2xl font-semibold mb-2">Earn Income</h3>
+              <p>Monetize your skills through digital products, workshops, and exclusive commissions.</p>
+            </motion.div>
           </div>
         </div>
       </section>
