@@ -83,58 +83,38 @@ const Home: React.FC = () => {
 
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
             {/* Feature 1 */}
-            <motion.div
-              initial={{ opacity: 0, y: 20 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.6 }}
-              className="text-center p-6 bg-gradient-to-br from-[#00A5E3] to-[#8DD7BF] rounded-2xl text-white transform hover:scale-105 transition-all duration-300"
-            >
-              <div className="w-16 h-16 bg-white bg-opacity-20 rounded-full flex items-center justify-center mx-auto mb-4">
-                <Palette size={32} />
-              </div>
-              <h3 className="text-xl font-semibold mb-3" style={{ fontFamily: 'Avantime' }}>
-                {translations.showcaseArt}
-              </h3>
-              <p style={{ fontFamily: 'Open Sauce' }}>
-                {translations.showcaseDescription}
-              </p>
-            </motion.div>
+            {/* Feature 1 */}
+              <motion.div
+                whileHover={{ scale: 1.05 }}
+                whileTap={{ scale: 0.95 }}
+                className="text-center p-6 bg-gradient-to-br from-[#606C38] to-[#283618] rounded-2xl text-white shadow-lg"
+              >
+                <div className="text-4xl mb-4">🎨</div>
+                <h3 className="text-2xl font-semibold mb-2">Showcase Your Art</h3>
+                <p>Digitally display your creativity to a wider audience who values your cultural roots.</p>
+              </motion.div>
 
-            {/* Feature 2 */}
-            <motion.div
-              initial={{ opacity: 0, y: 20 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.6, delay: 0.2 }}
-              className="text-center p-6 bg-gradient-to-br from-[#FF96C5] to-[#FF5768] rounded-2xl text-white transform hover:scale-105 transition-all duration-300"
-            >
-              <div className="w-16 h-16 bg-white bg-opacity-20 rounded-full flex items-center justify-center mx-auto mb-4">
-                <Users size={32} />
-              </div>
-              <h3 className="text-xl font-semibold mb-3" style={{ fontFamily: 'Avantime' }}>
-                {translations.buildConnections}
-              </h3>
-              <p style={{ fontFamily: 'Open Sauce' }}>
-                {translations.connectionsDescription}
-              </p>
-            </motion.div>
+              {/* Feature 2 */}
+              <motion.div
+                whileHover={{ scale: 1.05 }}
+                whileTap={{ scale: 0.95 }}
+                className="text-center p-6 bg-gradient-to-br from-[#DDA15E] to-[#C06414] rounded-2xl text-white shadow-lg"
+              >
+                <div className="text-4xl mb-4">🤝</div>
+                <h3 className="text-2xl font-semibold mb-2">Build Connections</h3>
+                <p>Connect with fellow artists, historians, and cultural enthusiasts across the globe.</p>
+              </motion.div>
 
-            {/* Feature 3 */}
-            <motion.div
-              initial={{ opacity: 0, y: 20 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.6, delay: 0.4 }}
-              className="text-center p-6 bg-gradient-to-br from-[#FFBF65] to-[#FF5768] rounded-2xl text-white transform hover:scale-105 transition-all duration-300"
-            >
-              <div className="w-16 h-16 bg-white bg-opacity-20 rounded-full flex items-center justify-center mx-auto mb-4">
-                <Award size={32} />
-              </div>
-              <h3 className="text-xl font-semibold mb-3" style={{ fontFamily: 'Avantime' }}>
-                {translations.earnIncome}
-              </h3>
-              <p style={{ fontFamily: 'Open Sauce' }}>
-                {translations.incomeDescription}
-              </p>
-            </motion.div>
+              {/* Feature 3 */}
+              <motion.div
+                whileHover={{ scale: 1.05 }}
+                whileTap={{ scale: 0.95 }}
+                className="text-center p-6 bg-gradient-to-br from-[#7B1010] to-[#4E2C0E] rounded-2xl text-white shadow-lg"
+              >
+                <div className="text-4xl mb-4">💰</div>
+                <h3 className="text-2xl font-semibold mb-2">Earn Income</h3>
+                <p>Monetize your skills through digital products, workshops, and exclusive commissions.</p>
+              </motion.div>
           </div>
         </div>
       </section>
