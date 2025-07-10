@@ -12,70 +12,90 @@ const Categories: React.FC = () => {
   const { translations } = useLanguage();
 
   const categories = [
-    'all', 'paintings', 'sculptures', 'digital art', 'photography', 'textiles', 'pottery', 'jewelry'
+    'all', 'Art', 'Dance', 'Music', 'Cities', 'Textile', 'Pottery', 'Jewelry'
   ];
 
   const artworks = [
     {
       id: '1',
-      title: 'Sunset Dreams',
-      artist: 'Maya Patel',
-      price: 250,
-      category: 'paintings',
-      image: 'https://images.pexels.com/photos/1105666/pexels-photo-1105666.jpeg?auto=compress&cs=tinysrgb&w=300',
-      description: 'A vibrant sunset painting with warm colors'
+      title: 'National Museum of Women in the Arts',
+      location: 'Washington, D.C., USA',
+      price: 550,
+      category: 'Art',
+      image: 'https://upload.wikimedia.org/wikipedia/commons/b/ba/National_Museum_of_Women_in_the_Arts.JPG',
+      description: 'This is the only major museum in the world solely dedicated to championing women through the arts. It features women artists who have historically been underrepresented in galleries and provides global visibility to their work.'
     },
     {
       id: '2',
-      title: 'Ocean Waves',
-      artist: 'Sarah Chen',
-      price: 180,
-      category: 'paintings',
-      image: 'https://images.pexels.com/photos/1579708/pexels-photo-1579708.jpeg?auto=compress&cs=tinysrgb&w=300',
-      description: 'Abstract representation of ocean waves'
+      title: 'Museum of Tribal Arts & Artifacts',
+      location: 'Bhubaneswar, India',
+      price: 300,
+      category: 'Art',
+      image: 'https://www.optimatravels.com/images/bhuwaneshwar-images/museum-of-tribal-arts-artifacts.jpg',
+      description: 'Indigenous and tribal women in India have long contributed to folk and tribal arts like Saura, Gond, Warli, and Pattachitra. This museum represents those art forms and highlights the deep cultural and feminine roots behind them.'
     },
     {
       id: '3',
-      title: 'Modern Sculpture',
-      artist: 'Elena Rodriguez',
-      price: 450,
-      category: 'sculptures',
-      image: 'https://images.pexels.com/photos/1183992/pexels-photo-1183992.jpeg?auto=compress&cs=tinysrgb&w=300',
-      description: 'Contemporary metal sculpture'
+      title: 'Jemaa el-Fnaa',
+      location: 'Marrakech, Morocco',
+      price: 150,
+      category: 'Cities',
+      image: 'https://dynamic-media-cdn.tripadvisor.com/media/photo-o/2f/fc/39/82/caption.jpg?w=800&h=400&s=1',
+      description: 'This vibrant marketplace is a living gallery of Moroccan culture, where women artisans sell hand-woven textiles, natural cosmetics, ceramics, and jewelry. It is a dynamic space of female entrepreneurship, tradition, and art.'
     },
     {
       id: '4',
-      title: 'Digital Harmony',
-      artist: 'Aisha Johnson',
+      title: 'Otavalo Market',
+      location: 'Otavalo, Ecuador',
       price: 120,
-      category: 'digital art',
-      image: 'https://images.pexels.com/photos/1269968/pexels-photo-1269968.jpeg?auto=compress&cs=tinysrgb&w=300',
-      description: 'Digital art with geometric patterns'
+      category: 'Cities',
+      image: 'https://www.metropolitan-touring.com/wp-content/uploads/2023/04/day-1-Otavalo-marketplace-culture-1.webp',
+      description: 'Otavalo Market is one of the most famous indigenous markets in South America, run largely by the Otavalo people, an indigenous group renowned for their handwoven textiles, beadwork, tapestries, and traditional music. This market is not just a commerce hub but a cultural platform where ancient artistic techniques meet modern storytelling.'
     },
     {
       id: '5',
-      title: 'Mountain Landscape',
-      artist: 'Priya Sharma',
+      title: 'Persian Carpet weavers',
+      location: 'Iran',
       price: 320,
-      category: 'photography',
-      image: 'https://images.pexels.com/photos/1287145/pexels-photo-1287145.jpeg?auto=compress&cs=tinysrgb&w=300',
-      description: 'Breathtaking mountain landscape photography'
+      category: 'Textile',
+      image: 'https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcTf7NJ6fzO-TRjtLcAewFzpctdPsoXC69fxAA&s',
+      description: 'Persian carpet weavers are skilled artisans who hand-knot intricate rugs using traditional techniques passed down through generations. Each design reflects cultural stories, symbols, and regional heritage. Their craftsmanship is globally admired for its beauty, precision, and durability.'
     },
     {
       id: '6',
       title: 'Handwoven Tapestry',
-      artist: 'Maria Santos',
+      location: 'Nepal',
       price: 280,
-      category: 'textiles',
+      category: 'Textile',
       image: 'https://images.pexels.com/photos/1191710/pexels-photo-1191710.jpeg?auto=compress&cs=tinysrgb&w=300',
       description: 'Traditional handwoven textile art'
+    },
+
+    {
+      id: '7',
+      title: 'Hula’s Female Revivalists',
+      location: 'Hawaii',
+      price: 70,
+      category: 'Dance',
+      image: 'https://upload.wikimedia.org/wikipedia/commons/thumb/a/a1/Hula_Ad_on_the_U.S._Mainland.jpg/500px-Hula_Ad_on_the_U.S._Mainland.jpg',
+      description: 'Hula, the traditional Hawaiian dance, is more than performance. 20th century, powerful female figures like "Iolani Luahine and Maiki Aiu Lake led the Hula Renaissance" reviving the ancient form.'
+    },
+
+    {
+      id: '8',
+      title: 'Bishnu Maya Rana',
+      location: 'Nepal',
+      price: 90,
+      category: 'Music',
+      image: 'https://republicaimg.nagariknewscdn.com/shared/web/uploads/media/Madal%20News%20photo.jpg',
+      description: 'In Lalang village, 72-year-old Bishnu Maya Rana and other women are reviving traditional folk music by learning to play the Madal, a drum once played only by men. Due to male migration and fading traditions, women are stepping up to preserve cultural heritage.'
     }
   ];
 
   const filteredArtworks = artworks.filter(artwork => {
     const matchesCategory = selectedCategory === 'all' || artwork.category === selectedCategory;
     const matchesSearch = artwork.title.toLowerCase().includes(searchTerm.toLowerCase()) ||
-                         artwork.artist.toLowerCase().includes(searchTerm.toLowerCase());
+                         artwork.Location.toLowerCase().includes(searchTerm.toLowerCase());
     const matchesPrice = artwork.price >= priceRange.min && artwork.price <= priceRange.max;
     return matchesCategory && matchesSearch && matchesPrice;
   });
@@ -172,7 +192,7 @@ const Categories: React.FC = () => {
                   {artwork.title}
                 </h3>
                 <p className="text-[#4E2C0E] mb-2" style={{ fontFamily: 'Open Sauce One' }}>
-                  by {artwork.artist}
+                  Location: {artwork.location}
                 </p>
                 <p className="text-sm text-gray-600 mb-4" style={{ fontFamily: 'Open Sauce One' }}>
                   {artwork.description}
@@ -188,13 +208,13 @@ const Categories: React.FC = () => {
                       name: artwork.title,
                       price: artwork.price,
                       image: artwork.image,
-                      artistName: artwork.artist
+                      Location: artwork.Location,
                     })}
                     className="bg-gradient-to-r from-[#4E2C0E] to-[#C06414] text-white px-4 py-2 rounded-lg hover:shadow-lg transition-all duration-300 flex items-center space-x-2"
                     style={{ fontFamily: 'Open Sauce One' }}
                   >
                     <ShoppingCart size={16} />
-                    <span>Add to Cart</span>
+                    <span>Ticket Price</span>
                   </button>
                 </div>
               </div>
