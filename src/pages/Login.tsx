@@ -12,7 +12,7 @@ const Login: React.FC = () => {
   const [userType, setUserType] = useState<'user' | 'artist' | 'admin'>('user');
   const [error, setError] = useState('');
   const [isLoading, setIsLoading] = useState(false);
-  
+
   const { login } = useAuth();
   const { translations } = useLanguage();
   const navigate = useNavigate();
@@ -33,7 +33,14 @@ const Login: React.FC = () => {
   };
 
   return (
-    <div className="min-h-screen bg-gradient-to-br from-[#00A5E3] via-[#8DD7BF] to-[#FF96C5] py-8">
+    <div
+      className="min-h-screen bg-cover bg-center bg-no-repeat py-8"
+      style={{
+        backgroundImage: `url('/hehe.jpg')`, 
+        backgroundBlendMode: 'overlay',
+        backgroundColor: 'rgba(0, 0, 0, 0.6)', 
+      }}
+    >
       <div className="max-w-md mx-auto px-4 sm:px-6 lg:px-8">
         <motion.div
           initial={{ opacity: 0, y: 20 }}

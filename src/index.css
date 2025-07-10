@@ -2,7 +2,7 @@
 @tailwind components;
 @tailwind utilities;
 
-@import url('https://fonts.googleapis.com/css2?family=Aquafina+Script&family=Avantime:wght@400;700&family=Open+Sauce+One:wght@300;400;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css=Aquafina+Script&family=Avantime:wght@400;700&family=Open+Sauce+One:wght@300;400;600;700&display=swap');
 
 @layer base {
   body {
@@ -86,7 +86,7 @@ html {
 }
 
 .bg-gradient-accent {
-  background: linear-gradient(135deg, #f7a737 0%, #FF5768 100%);
+  background: linear-gradient(135deg, #f8a22b 0%, #FF5768 100%);
 }
 
 /* Custom shadows */

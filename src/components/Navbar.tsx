@@ -36,7 +36,7 @@ const Navbar: React.FC = () => {
         <div className="flex justify-between items-center h-16">
           {/* Logo */}
           <Link to="/" className="flex items-center space-x-2">
-            <div className="w-8 h-8 bg-gradient-to-r from-[#00A5E3] to-[#8DD7BF] rounded-lg flex items-center justify-center">
+            <div className="w-8 h-8 bg-gradient-to-r from-[#000000] to-[#000003] rounded-lg flex items-center justify-center">
               <span className="text-white font-bold text-lg" style={{ fontFamily: 'Aquafina Script' }}>H</span>
             </div>
           </Link>

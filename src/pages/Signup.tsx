@@ -2,8 +2,8 @@ import React, { useState } from 'react';
 import { Link, useNavigate } from 'react-router-dom';
 import { motion } from 'framer-motion';
 import { Eye, EyeOff } from 'lucide-react';
-import { useAuth } from '../context/AuthContext';
-import { useLanguage } from '../context/LanguageContext';
+import { useAuth } from '../context/AuthContext'; // Assuming this path is correct
+import { useLanguage } from '../context/LanguageContext'; // Assuming this path is correct
 
 const Signup: React.FC = () => {
   const [formData, setFormData] = useState({
@@ -19,8 +19,9 @@ const Signup: React.FC = () => {
   const [isLoading, setIsLoading] = useState(false);
   
   const { signup } = useAuth();
-  const { translations } = useLanguage();
+  const { translations } = useLanguage(); // Assuming translations are used elsewhere in your app
   const navigate = useNavigate();
+
 
   const handleChange = (e: React.ChangeEvent<HTMLInputElement>) => {
     setFormData({
@@ -46,9 +47,11 @@ const Signup: React.FC = () => {
     setIsLoading(true);
 
     try {
+      // Assuming signup function handles user type
       await signup(formData.email, formData.password, formData.name, userType);
-      navigate('/');
+      navigate('/'); // Redirect to home or dashboard on successful signup
     } catch (err) {
+      console.error('Signup error:', err);
       setError('Account creation failed. Please try again.');
     } finally {
       setIsLoading(false);
@@ -56,7 +59,14 @@ const Signup: React.FC = () => {
   };
 
   return (
-    <div className="min-h-screen bg-gradient-to-br from-[#00A5E3] via-[#8DD7BF] to-[#FF96C5] py-8">
+    <div
+      className="min-h-screen bg-cover bg-center bg-no-repeat py-8"
+      style={{
+        backgroundImage: `url('${'/hehe.jpg'}')`, 
+        backgroundBlendMode: 'overlay',
+        backgroundColor: 'rgba(0, 0, 0, 0.6)', 
+      }}
+    >
       <div className="max-w-md mx-auto px-4 sm:px-6 lg:px-8">
         <motion.div
           initial={{ opacity: 0, y: 20 }}

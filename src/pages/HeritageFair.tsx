@@ -137,7 +137,7 @@ const HeritageFair: React.FC = () => {
                 placeholder="Search artwork..."
                 value={searchTerm}
                 onChange={(e) => setSearchTerm(e.target.value)}
-                className="w-full pl-10 pr-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-[#00A5E3]"
+                className="w-full pl-10 pr-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-[#50C878]"
                 style={{ fontFamily: 'Open Sauce' }}
               />
             </div>
@@ -146,7 +146,7 @@ const HeritageFair: React.FC = () => {
             <select
               value={selectedCategory}
               onChange={(e) => setSelectedCategory(e.target.value)}
-              className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-[#00A5E3]"
+              className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-[#50C878]"
               style={{ fontFamily: 'Open Sauce' }}
             >
               {categories.map(category => (
@@ -160,7 +160,7 @@ const HeritageFair: React.FC = () => {
             <select
               value={sortBy}
               onChange={(e) => setSortBy(e.target.value)}
-              className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-[#00A5E3]"
+              className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-[#50C878]"
               style={{ fontFamily: 'Open Sauce' }}
             >
               {sortOptions.map(option => (
@@ -171,7 +171,7 @@ const HeritageFair: React.FC = () => {
             </select>
 
             {/* Filter Button */}
-            <button className="flex items-center justify-center space-x-2 bg-[#00A5E3] text-white px-4 py-2 rounded-lg hover:bg-opacity-90 transition-colors">
+            <button className="flex items-center justify-center space-x-2 bg-[#50C878] text-white px-4 py-2 rounded-lg hover:bg-opacity-90 transition-colors">
               <Filter size={20} />
               <span style={{ fontFamily: 'Open Sauce' }}>More Filters</span>
             </button>
@@ -198,12 +198,12 @@ const HeritageFair: React.FC = () => {
                 {/* Badges */}
                 <div className="absolute top-2 left-2 flex flex-col space-y-1">
                   {artwork.isFeatured && (
-                    <span className="bg-[#FFBF65] text-white px-2 py-1 rounded-full text-xs font-semibold">
+                    <span className="bg-[#50C878] text-white px-2 py-1 rounded-full text-xs font-semibold">
                       Featured
                     </span>
                   )}
                   {artwork.isOnSale && (
-                    <span className="bg-[#FF5768] text-white px-2 py-1 rounded-full text-xs font-semibold">
+                    <span className="bg-[#50C878] text-white px-2 py-1 rounded-full text-xs font-semibold">
                       Sale
                     </span>
                   )}
@@ -239,7 +239,7 @@ const HeritageFair: React.FC = () => {
 
                 <div className="flex items-center justify-between">
                   <div className="flex items-center space-x-2">
-                    <span className="text-xl font-bold text-[#00A5E3]" style={{ fontFamily: 'Avantime' }}>
+                    <span className="text-xl font-bold text-[#50C878]" style={{ fontFamily: 'Avantime' }}>
                       ${artwork.price}
                     </span>
                     {artwork.originalPrice && (
@@ -257,7 +257,7 @@ const HeritageFair: React.FC = () => {
                       image: artwork.image,
                       artistName: artwork.artist
                     })}
-                    className="bg-gradient-to-r from-[#00A5E3] to-[#8DD7BF] text-white p-2 rounded-lg hover:shadow-lg transition-all duration-300"
+                    className="bg-gradient-to-r from-[#00A5E3] to-[#8DD7BF] text-white px-6 py-2 rounded-lg hover:shadow-lg transition-all duration-300"
                     title="Add to Cart"
                   >
                     <ShoppingCart size={16} />

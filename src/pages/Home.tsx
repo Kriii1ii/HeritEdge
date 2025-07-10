@@ -11,7 +11,7 @@ const Home: React.FC = () => {
     <div className="min-h-screen">
       {/* Hero Section with Background Image */}
       <section
-        className="relative h-screen flex items-center justify-center bg-cover bg-center bg-no-repeat overflow-hidden"
+        className="w-full relative h-screen flex items-center justify-center bg-cover bg-center bg-no-repeat overflow-hidden"
         style={{
           backgroundImage: "url('/astha.jpg')", 
         }}
