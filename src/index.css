@@ -30,16 +30,16 @@
 }
 
 ::-webkit-scrollbar-track {
-  background: #f1f1f1;
+  background: #40150A;
 }
 
 ::-webkit-scrollbar-thumb {
-  background: #00A5E3;
+  background: #9a6824;
   border-radius: 4px;
 }
 
 ::-webkit-scrollbar-thumb:hover {
-  background: #8DD7BF;
+  background: #474E30;
 }
 
 /* Smooth scrolling */
@@ -49,7 +49,7 @@ html {
 
 /* Focus styles */
 *:focus {
-  outline: 2px solid #00A5E3;
+  outline: 2px solid #1d392b;
   outline-offset: 2px;
 }
 
@@ -78,7 +78,7 @@ html {
 
 /* Custom gradient backgrounds */
 .bg-gradient-primary {
-  background: linear-gradient(135deg, #00A5E3 0%, #8DD7BF 100%);
+  background: linear-gradient(135deg, #40150A 0%, #9a6824 100%);
 }
 
 .bg-gradient-secondary {
@@ -86,7 +86,7 @@ html {
 }
 
 .bg-gradient-accent {
-  background: linear-gradient(135deg, #FFBF65 0%, #FF5768 100%);
+  background: linear-gradient(135deg, #f7a737 0%, #FF5768 100%);
 }
 
 /* Custom shadows */
@@ -115,7 +115,7 @@ html {
 
 /* Text gradient effects */
 .text-gradient {
-  background: linear-gradient(135deg, #00A5E3 0%, #8DD7BF 100%);
+  background: linear-gradient(135deg, #40150A 0%, #9a6824 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;

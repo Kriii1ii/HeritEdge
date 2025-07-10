@@ -9,18 +9,16 @@ const Home: React.FC = () => {
 
   return (
     <div className="min-h-screen">
-      {/* Hero Section */}
-      <section className="relative h-screen flex items-center justify-center bg-gradient-to-br from-[#00A5E3] via-[#8DD7BF] to-[#FF96C5] overflow-hidden">
-        {/* Background Pattern */}
-        <div className="absolute inset-0 opacity-20">
-          <div className="absolute top-20 left-20 w-32 h-32 bg-white rounded-full blur-3xl"></div>
-          <div className="absolute bottom-20 right-20 w-48 h-48 bg-white rounded-full blur-3xl"></div>
-          <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-64 h-64 bg-white rounded-full blur-3xl"></div>
-        </div>
+      {/* Hero Section with Background Image */}
+      <section
+        className="relative h-screen flex items-center justify-center bg-cover bg-center bg-no-repeat overflow-hidden"
+        style={{
+          backgroundImage: "url('/astha.jpg')", 
+        }}
+      >
+        {/* Optional Dark Overlay */}
+        <div className="absolute inset-0 bg-black opacity-40 z-0"></div>
 
-        {/* Vibrant Art Background */}
-        <div className="absolute inset-0 bg-gradient-to-r from-[#FF5768] via-[#FF96C5] to-[#FFBF65] opacity-30"></div>
-        
         {/* Content */}
         <div className="relative z-10 text-center px-4 sm:px-6 lg:px-8">
           <motion.div
@@ -38,7 +36,7 @@ const Home: React.FC = () => {
             <p className="text-lg sm:text-xl text-white mb-12 max-w-3xl mx-auto leading-relaxed" style={{ fontFamily: 'Open Sauce' }}>
               {translations.heroDescription}
             </p>
-            
+
             <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
               <Link
                 to="/categories"
@@ -48,7 +46,7 @@ const Home: React.FC = () => {
                 <Palette size={20} />
                 <span>{translations.exploreArt}</span>
               </Link>
-              
+
               <Link
                 to="/signup?type=artist"
                 className="bg-transparent border-2 border-white text-white px-8 py-4 rounded-full font-semibold hover:bg-white hover:text-[#00A5E3] transition-all duration-300 flex items-center space-x-2 transform hover:scale-105"
@@ -57,7 +55,7 @@ const Home: React.FC = () => {
                 <Users size={20} />
                 <span>{translations.joinAsArtist}</span>
               </Link>
-              
+
               <Link
                 to="/signup"
                 className="bg-[#FF5768] text-white px-8 py-4 rounded-full font-semibold hover:bg-opacity-90 transition-all duration-300 flex items-center space-x-2 transform hover:scale-105"
