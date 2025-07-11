@@ -12,17 +12,15 @@ const HeritageFair: React.FC = () => {
   const artworks = [
     {
       id: '1',
-      title: 'Titaura',
-      artist: 'Prapti Baral',
-      price: 2,
-      originalPrice: 420,
+      title: 'Lila',
+      artist: 'Aakriti Guragain',
+      price: 130,
       rating: 4.9,
-      reviews: 28,
-      image: 'https://d11qgm9a5k858y.cloudfront.net/8d06ewqh9pmyba0q79992y97nqm9',
-      description: 'Unleash your taste buds with our Aap Titaura—a bold fusion of juicy mango, fiery spices, and a zesty Nepali kick.',
-      isFeatured: true,
-      isOnSale: true
+      reviews: 35,
+      image: 'https://i.pinimg.com/1200x/d0/28/67/d028670a245083c51e262cede1ce7510.jpg',
+      description: 'Handmade macramé piece crafted with care and creativity. A perfect touch of elegance and warmth for any space.'
     },
+    
     {
       id: '2',
       title: 'Mato ko Bhada',
@@ -56,13 +54,16 @@ const HeritageFair: React.FC = () => {
     },
     {
       id: '5',
-      title: 'Lila',
-      artist: 'Aakriti Guragain',
-      price: 130,
+      title: 'Titaura',
+      artist: 'Prapti Baral',
+      price: 2,
+      originalPrice: 420,
       rating: 4.9,
-      reviews: 35,
-      image: 'https://i.pinimg.com/1200x/d0/28/67/d028670a245083c51e262cede1ce7510.jpg',
-      description: 'Handmade macramé piece crafted with care and creativity. A perfect touch of elegance and warmth for any space.'
+      reviews: 28,
+      image: 'https://d11qgm9a5k858y.cloudfront.net/8d06ewqh9pmyba0q79992y97nqm9',
+      description: 'Unleash your taste buds with our Aap Titaura—a bold fusion of juicy mango, fiery spices, and a zesty Nepali kick.',
+      isFeatured: true,
+      isOnSale: true
     },
     {
       id: '6',
