@@ -14,7 +14,7 @@ const HeritageFair: React.FC = () => {
       id: '1',
       title: 'Lila',
       artist: 'Aakriti Guragain',
-      price: 130,
+      price: 1690,
       rating: 4.9,
       reviews: 35,
       image: 'https://i.pinimg.com/1200x/d0/28/67/d028670a245083c51e262cede1ce7510.jpg',
@@ -25,7 +25,7 @@ const HeritageFair: React.FC = () => {
       id: '2',
       title: 'Mato ko Bhada',
       artist: 'Kamala Ghimire',
-      price: 10,
+      price: 500,
       rating: 4.8,
       reviews: 42,
       image: 'https://www.lokpath.com/wp-content/uploads/2023/05/mato-ko-bhada.webp',
@@ -36,7 +36,7 @@ const HeritageFair: React.FC = () => {
       id: '3',
       title: 'Mithila Art',
       artist: 'Kabita Khanal',
-      price: 280,
+      price: 30000,
       rating: 4.7,
       reviews: 15,
       image: 'https://5.imimg.com/data5/SELLER/Default/2022/1/HX/IV/YD/114236912/9a3c651d3a79f1a9ba4528d39a5a4995-jpg-500x500.jpg',
@@ -46,7 +46,7 @@ const HeritageFair: React.FC = () => {
       id: '4',
       title: 'Boju ko Juju Dhau',
       artist: 'Mina Thebe',
-      price: 95,
+      price: 120,
       rating: 4.6,
       reviews: 22,
       image: 'https://cdn.blanxer.com/uploads/647efbd251c1df3943258a4f/product_image-img_9818-1266.png',
@@ -56,7 +56,7 @@ const HeritageFair: React.FC = () => {
       id: '5',
       title: 'Titaura',
       artist: 'Prapti Baral',
-      price: 2,
+      price: 200,
       originalPrice: 420,
       rating: 4.9,
       reviews: 28,
@@ -146,7 +146,7 @@ const HeritageFair: React.FC = () => {
                 </p>
                 <div className="flex items-center justify-between">
                   <span className="text-2xl font-bold text-[#C06414]" style={{ fontFamily: 'Avantime' }}>
-                    ${artwork.price}
+                    ₹{artwork.price}
                   </span>
                   <button
                     onClick={() => addToCart({

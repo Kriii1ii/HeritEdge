@@ -70,7 +70,6 @@ const Categories: React.FC = () => {
       image: 'https://images.pexels.com/photos/1191710/pexels-photo-1191710.jpeg?auto=compress&cs=tinysrgb&w=300',
       description: 'Traditional handwoven textile art'
     },
-
     {
       id: '7',
       title: 'Hula’s Female Revivalists',
@@ -80,7 +79,6 @@ const Categories: React.FC = () => {
       image: 'https://upload.wikimedia.org/wikipedia/commons/thumb/a/a1/Hula_Ad_on_the_U.S._Mainland.jpg/500px-Hula_Ad_on_the_U.S._Mainland.jpg',
       description: 'Hula, the traditional Hawaiian dance, is more than performance. 20th century, powerful female figures like "Iolani Luahine and Maiki Aiu Lake led the Hula Renaissance" reviving the ancient form.'
     },
-
     {
       id: '8',
       title: 'Bishnu Maya Rana',
@@ -95,7 +93,7 @@ const Categories: React.FC = () => {
   const filteredArtworks = artworks.filter(artwork => {
     const matchesCategory = selectedCategory === 'all' || artwork.category === selectedCategory;
     const matchesSearch = artwork.title.toLowerCase().includes(searchTerm.toLowerCase()) ||
-                         artwork.Location.toLowerCase().includes(searchTerm.toLowerCase());
+                          artwork.location.toLowerCase().includes(searchTerm.toLowerCase());
     const matchesPrice = artwork.price >= priceRange.min && artwork.price <= priceRange.max;
     return matchesCategory && matchesSearch && matchesPrice;
   });
@@ -208,7 +206,7 @@ const Categories: React.FC = () => {
                       name: artwork.title,
                       price: artwork.price,
                       image: artwork.image,
-                      Location: artwork.Location,
+                      location: artwork.location
                     })}
                     className="bg-gradient-to-r from-[#4E2C0E] to-[#C06414] text-white px-4 py-2 rounded-lg hover:shadow-lg transition-all duration-300 flex items-center space-x-2"
                     style={{ fontFamily: 'Open Sauce One' }}
@@ -222,6 +220,7 @@ const Categories: React.FC = () => {
           ))}
         </div>
 
+        {/* No Results Message */}
         {filteredArtworks.length === 0 && (
           <div className="text-center py-12">
             <p className="text-xl text-[#606C38]" style={{ fontFamily: 'Open Sauce One' }}>
